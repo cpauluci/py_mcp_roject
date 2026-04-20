@@ -17,7 +17,9 @@ MCP Chat is a command-line interface application that enables interactive chat c
 1. Create or edit the `.env` file in the project root and verify that the following variables are set correctly:
 
 ```
-ANTHROPIC_API_KEY=""  # Enter your Anthropic API secret key
+ANTHROPIC_API_KEY=""                        # Enter your Anthropic API secret key
+CLAUDE_MODEL="claude-sonnet-4-5"            # Enter your Claude model
+USE_UV=1                                    # Set to 1 if you're using uv, 0 otherwise
 ```
 
 ### Step 2: Install dependencies
