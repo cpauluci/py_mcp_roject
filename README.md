@@ -30,9 +30,9 @@ USE_UV=1                                    # Set to 1 if you're using uv, 0 oth
 
 1. Install uv, if not already installed:
 
-If you don't have Python installed, you can use the provided setup script to install `uv` standalone:
+If you don't have Python installed, you can use the provided setup script to install `uv` standalone and configure your `.env` file:
 ```bash
-./setup_uv.sh
+./setup.sh
 ```
 *(After running, you may need to restart your terminal or run `source $HOME/.local/bin/env`)*
 

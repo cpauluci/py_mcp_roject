@@ -31,3 +31,22 @@ else
     echo "source \$HOME/.local/bin/env"
     echo "Ou simplesmente feche e abra o terminal novamente."
 fi
+
+echo ""
+echo "Configurando o ambiente do projeto..."
+if [ ! -f .env ]; then
+    echo "Criando o arquivo .env padrão..."
+    cat <<EOF > .env
+CLAUDE_MODEL="claude-sonnet-4-5"
+ANTHROPIC_API_KEY=""
+
+# Set to 1 if you're using uv to run the project
+# Set to 0 if you're *not* using uv
+USE_UV=1
+EOF
+    echo "✅ Arquivo .env criado na raiz do projeto."
+    echo "⚠️ IMPORTANTE: Edite o arquivo .env e adicione sua chave da Anthropic em ANTHROPIC_API_KEY."
+else
+    echo "✅ Arquivo .env já existe."
+fi
+
